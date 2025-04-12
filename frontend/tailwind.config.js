@@ -8,6 +8,6 @@ export default {
     daisyui: {
       themes: ['light', 'synthwave'],
     },
-    darkMode: 'class', // เปิดใช้งานโหมดมืดด้วยการสลับคลาส
+    darkMode: 'class', 
   };
   
