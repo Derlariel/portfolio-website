@@ -6,8 +6,16 @@ const { theme } = useTheme(); // ได้ค่า theme จาก useTheme
 </script>
 
 <template>
-  <div :data-theme="theme">
+  <div
+    :data-theme="theme"
+    :class="[
+      theme === 'dark'
+        ? 'animate-gradient-x bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]'
+        : 'light' 
+    ]"
+  >
     <ThemeToggle />
-    <Hero/>
+    <Hero />
   </div>
 </template>
+
